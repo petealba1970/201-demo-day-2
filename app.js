@@ -46,9 +46,9 @@ var question5 = prompt('Do I wish to apply coding skills to music?');
 question5 = question5.toLowerCase();
 if (question5 === 'yes' || question5 === 'y') {
     //console.log('Correct, ' + userName);
-    alert('Correct, ' + userName);
+    alert('Correct, ' + userName + ', thank you for participating!');
 }
 else {
     //console.log(userName + ', that is incorrect.');
-    alert(userName + ', that is incorrect.');
+    alert(userName + ', that is incorrect. Thank you for participating!');
 }
