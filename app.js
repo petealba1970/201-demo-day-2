@@ -92,7 +92,7 @@ while (question6 !== correctanswer && guessCounter < 5) {
 alert('Correct!');
 correctAnswers = correctAnswers + 1
 
-var numTries = 1
+var numTries = 0
 var hasNotBeenFound = true
 var faveGitPlayers = ['jimi hendrix', 'jimmy page', 'jeff beck', 'chuck berry', 'eric clapton', 'toni iommi', 'eddie van halen', 'randy rhoads', 'marty friedman', 'jennifer batten'];
 var question7 = prompt('Guess one of my favorite guitar players in six tries. Note- the name will not be case sensitive but must be spelled correctly.');
@@ -114,17 +114,14 @@ while (hasNotBeenFound === true && numTries <= 6) {
 
 
         var hasNotBeenFound = false
+
+    }
+    else {
+        question7 = prompt('Try Again')
     }
 }
-alert('yes!');
-
-
-
-alert('Nope, guess again.')
-
-
-
+alert('yes! You guessed it in ' + numTries + ('attempts!'));
 
 
 var correctAnswers = correctAnswers + 1;
-alert('Correct, ' + userName + '! You now have a total of ' + correctAnswers + ' questions right!');
+alert(userName + ', You now have a total of ' + correctAnswers + ' questions right!');
