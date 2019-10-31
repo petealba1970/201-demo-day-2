@@ -120,6 +120,7 @@ while (hasNotBeenFound === true && numTries < 6) {
     }
     else {
         question7 = prompt('Try Again')
+        var question7 = question7.toLowerCase();
     }
 }
 //checking to see if hasNotfound has changed value and if number of attempts are up//
