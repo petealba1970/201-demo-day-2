@@ -98,7 +98,7 @@ var faveGitPlayers = ['jimi hendrix', 'jimmy page', 'jeff beck', 'chuck berry', 
 var question7 = prompt('Guess one of my favorite guitar players in six tries. Note- the name will not be case sensitive but must be spelled correctly.');
 var question7 = question7.toLowerCase();
 
-while (hasNotBeenFound === true && numTries <= 6) {
+while (hasNotBeenFound === true && numTries < 6) {
 
     numTries++;
     if (question7 === faveGitPlayers[0] ||
@@ -120,7 +120,14 @@ while (hasNotBeenFound === true && numTries <= 6) {
         question7 = prompt('Try Again')
     }
 }
-alert('yes! You guessed it in ' + numTries + ('attempts!'));
+if (hasNotBeenFound === true && numTries === 6) {
+    //console.log('Sorry, your tries have expired.)
+    alert('Sorry, your tries have expired.');
+}
+
+else {
+    alert('yes! You guessed it in ' + numTries + ' attempts!');
+}
 
 
 var correctAnswers = correctAnswers + 1;
