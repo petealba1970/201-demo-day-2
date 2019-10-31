@@ -87,8 +87,9 @@ while (question6 !== correctanswer && guessCounter < 5) {
 
 
     }
-    alert('Correct!');
+
 }
+alert('Correct!');
 correctAnswers = correctAnswers + 1
 
 var numTries = 1
