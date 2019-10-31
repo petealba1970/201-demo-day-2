@@ -2,6 +2,7 @@
 var userName = prompt('What is your name?');
 //console.log('Welcome ' + userName + ', feel free to read my biography and answer some questions about me.')
 alert('Welcome ' + userName + ', feel free to read my biography and answer some questions about me.');
+// series of yes or no question run by if else statements
 var correctAnswers = 0
 var question1 = prompt('Did I learn to be a pro musician in New Orleans, yes or no?');
 question1 = question1.toLowerCase();
@@ -60,7 +61,7 @@ else {
     alert(userName + ', that is incorrect.');
 }
 
-
+// random number generator
 var question6 = prompt('Guess a number between 1 and 5');
 var guessCounter = 1
 function getRandomIntInclusive(min, max) {
@@ -69,6 +70,7 @@ function getRandomIntInclusive(min, max) {
     return (Math.floor(Math.random() * (max - min + 1)) + min).toString();
     //The maximum is inclusive and the minimum is inclusive 
 }
+//runs a while loop if question6 does not match the random number or we use up our 5 tries
 var correctanswer = getRandomIntInclusive(1, 5);
 while (question6 !== correctanswer && guessCounter < 5) {
     console.log('incorrect!')
@@ -97,7 +99,7 @@ var hasNotBeenFound = true
 var faveGitPlayers = ['jimi hendrix', 'jimmy page', 'jeff beck', 'chuck berry', 'eric clapton', 'toni iommi', 'eddie van halen', 'randy rhoads', 'marty friedman', 'jennifer batten'];
 var question7 = prompt('Guess one of my favorite guitar players in six tries. Note- the name will not be case sensitive but must be spelled correctly.');
 var question7 = question7.toLowerCase();
-
+// while loop runs until value of hasNotBeenFound is flipped by a match or number of tries reach 6
 while (hasNotBeenFound === true && numTries < 6) {
 
     numTries++;
@@ -120,15 +122,16 @@ while (hasNotBeenFound === true && numTries < 6) {
         question7 = prompt('Try Again')
     }
 }
+//checking to see if hasNotfound has changed value and if number of attempts are up//
 if (hasNotBeenFound === true && numTries === 6) {
     //console.log('Sorry, your tries have expired.)
     alert('Sorry, your tries have expired.');
 }
-
+// if hasnotbeenfound value is false, triggered by a match we send an alert to user
 else {
     alert('yes! You guessed it in ' + numTries + ' attempts!');
 }
 
-
+//final tally//
 var correctAnswers = correctAnswers + 1;
 alert(userName + ', You now have a total of ' + correctAnswers + ' questions right!');
