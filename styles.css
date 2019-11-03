@@ -1,5 +1,22 @@
-body {
+ body {font-family: sans-serif, Helvetica, Monospace;
     background-color: red; 
-  margin: 150px;
-
+  margin: 150px; 
+ }
+  
+ img.picalign{
+  float: right;
 }
+ 
+ul.Facts {
+  color: red;
+background-color: black;
+font-family: sans-serif;
+font-size: 150%;
+}
+ol.players {
+color: black;
+background-color: red;
+}
+
+
+

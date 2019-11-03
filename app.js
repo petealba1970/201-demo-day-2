@@ -6,7 +6,8 @@ alert('Welcome ' + userName + ', feel free to read my biography and answer some 
 // create a counter to track correct answers
 var correctAnswers = 0
 
-// series of yes or no question run by if else statements
+// series of 5 yes or no question run by if else statements
+// Question 1
 
 function firstQuestion() {
     var question1 = prompt('Did I learn to be a pro musician in New Orleans, yes or no?');
@@ -24,6 +25,8 @@ function firstQuestion() {
 firstQuestion();
 console.log('correct answer ' + correctAnswers);
 
+// Question 2
+
 function secondQuestion() {
     var question2 = prompt('Did I receive my MM in jazz performance in New Orleans?');
     question2 = question2.toLowerCase();
@@ -40,6 +43,8 @@ function secondQuestion() {
 secondQuestion();
 console.log('correct answer ' + correctAnswers);
 
+// Question 3
+
 function thirdQuestion() {
     var question3 = prompt('Do I teach guitar?');
     question3 = question3.toLowerCase();
@@ -55,6 +60,8 @@ function thirdQuestion() {
 }
 thirdQuestion();
 
+// Question 4
+
 function fourthQuestion() {
     var question4 = prompt('Did I grow up on the west coast?');
     question4 = question4.toLowerCase();
@@ -68,7 +75,12 @@ function fourthQuestion() {
         correctAnswers++
     }
 }
+
+
+
 fourthQuestion();
+
+// Question 5
 
 function fifthQuestion() {
     var question5 = prompt('Do I wish to apply coding skills to music?');
@@ -85,10 +97,13 @@ function fifthQuestion() {
         alert(userName + ', that is incorrect.');
     }
 }
+
+
+
 fifthQuestion();
 
 
-// random number generator
+//   Question 6  random number generator
 
 function sixthQuestion() {
     var question6 = prompt('Guess a number between 1 and 5');
@@ -99,7 +114,9 @@ function sixthQuestion() {
         return (Math.floor(Math.random() * (max - min + 1)) + min).toString();
         //The maximum is inclusive and the minimum is inclusive 
     }
+
     //runs a while loop if question6 does not match the random number or we use up our 5 tries
+
     var correctanswer = getRandomIntInclusive(1, 5);
     while (question6 !== correctanswer && guessCounter < 5) {
         console.log('incorrect!')
@@ -124,6 +141,8 @@ function sixthQuestion() {
     correctAnswers++;
 }
 sixthQuestion();
+
+// Question 7  -six tries to pick one of my top 10 favorite guitar players
 
 function seventhQuestion() {
     var numTries = 0
