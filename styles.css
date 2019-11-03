@@ -6,6 +6,9 @@ background-image: url("images/wall.jpg");
   margin: 150px; 
  }
   
+ h2 {
+   color: blue;
+ }
  img.picalign{
   float: right;
 }
