@@ -118,7 +118,7 @@ function sixthQuestion() {
     //runs a while loop if question6 does not match the random number or we use up our 5 tries
 
     var correctanswer = getRandomIntInclusive(1, 5);
-    while (question6 !== correctanswer && guessCounter < 5) {
+    while (question6 !== correctanswer && guessCounter < 4) {
         console.log('incorrect!')
         alert('Incorrect, ' + userName);
         if (question6 < correctanswer) {
